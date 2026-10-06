@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan.EXE — Creative Developer & Digital Experiences</title>
+    <meta name="description" content="View upcoming projects and prototypes currently under development in Aryan Gehlot's creative developer portfolio of digital experiences.">
+
+    <!-- Site Identity & App Name -->
+    <meta name="application-name" content="Aryan.EXE">
+    <meta name="apple-mobile-web-app-title" content="Aryan.EXE">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Favicon — Google Search, Browser Tabs, Mobile Browsers -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aryansexe.netlify.app/wip.html">
+    <meta property="og:site_name" content="Aryan.EXE">
+    <meta property="og:title" content="Work In Progress — Aryan.EXE">
+    <meta property="og:description" content="View upcoming projects and prototypes currently under development in Aryan Gehlot's creative developer portfolio of digital experiences.">
+    <meta property="og:image" content="https://aryansexe.netlify.app/assets/developer_portrait.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://aryansexe.netlify.app/wip.html">
+    <meta name="twitter:title" content="Work In Progress — Aryan.EXE">
+    <meta name="twitter:description" content="View upcoming projects and prototypes currently under development in Aryan Gehlot's creative developer portfolio of digital experiences.">
+    <meta name="twitter:image" content="https://aryansexe.netlify.app/assets/developer_portrait.jpg">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C51HEHKHG2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C51HEHKHG2');
+    </script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;900&family=Outfit:wght@400;500;700;900&family=Syne:wght@400;700;800&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .wip-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .wip-title {
+            font-family: 'Unbounded', sans-serif;
+            font-size: clamp(2rem, 6vw, 4.5rem);
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+            line-height: 1.1;
+        }
+
+        .wip-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(0.95rem, 1.8vw, 1.25rem);
+            color: var(--text-dim, #888888);
+            font-weight: 400;
+            margin-bottom: 3.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        .wip-back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 0.85rem 1.8rem;
+            border-radius: 100px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(8px);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .wip-back-btn:hover {
+            border-color: rgba(255, 255, 255, 0.4);
+            background: #ffffff;
+            color: #000000;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.12);
+        }
+
+        .wip-back-btn i {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .wip-back-btn:hover i {
+            transform: translateX(-4px);
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- Cinematic Stars Background -->
+    <div id="bg-stars">
+        <canvas id="stars-canvas"></canvas>
+    </div>
+    <div class="noise-overlay"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Main Container -->
+    <div class="wip-container">
+        <h1 class="wip-title">WORK IN PROGRESS...</h1>
+        <p class="wip-subtitle">This project is currently under development.</p>
+        <a href="work.html" class="wip-back-btn" data-hover data-magnetic>
+            <i class="fa-solid fa-arrow-left"></i> Back to Projects
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan.EXE — Creative Developer & Digital Experiences</title>
+    <meta name="description" content="Aryan Gehlot is a Creative Developer specializing in premium portfolio websites, interactive web design, modern UI/UX, and immersive digital experiences.">
+
+    <!-- Site Identity & App Name -->
+    <meta name="application-name" content="Aryan.EXE">
+    <meta name="apple-mobile-web-app-title" content="Aryan.EXE">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- Favicon — Google Search, Browser Tabs, Mobile Browsers -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aryansexe.netlify.app/">
+    <meta property="og:site_name" content="Aryan.EXE">
+    <meta property="og:title" content="Aryan.EXE — Creative Developer & Digital Experiences">
+    <meta property="og:description" content="Aryan Gehlot is a Creative Developer specializing in premium portfolio websites, interactive web design, modern UI/UX, and immersive digital experiences.">
+    <meta property="og:image" content="https://aryansexe.netlify.app/assets/developer_portrait.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://aryansexe.netlify.app/">
+    <meta name="twitter:title" content="Aryan.EXE — Creative Developer & Digital Experiences">
+    <meta name="twitter:description" content="Aryan Gehlot is a Creative Developer specializing in premium portfolio websites, interactive web design, modern UI/UX, and immersive digital experiences.">
+    <meta name="twitter:image" content="https://aryansexe.netlify.app/assets/developer_portrait.jpg">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C51HEHKHG2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-C51HEHKHG2');
+    </script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;900&family=Outfit:wght@400;500;700;900&family=Syne:wght@400;700;800&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=3D-card-v13">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://aryansexe.netlify.app/#person",
+          "name": "Aryan Gehlot",
+          "alternateName": "Aryan.EXE",
+          "jobTitle": "Creative Developer",
+          "url": "https://aryansexe.netlify.app",
+          "image": "https://aryansexe.netlify.app/assets/developer_portrait.jpg",
+          "sameAs": [
+            "https://x.com/Aryanwastakenn",
+            "https://www.linkedin.com/in/aryangehlot/",
+            "https://github.com/aryangehlod1234-blip",
+            "https://www.instagram.com/aryanswastaken?igsh=MTRtMno5anNqdzNyMw=="
+          ],
+          "knowsAbout": [
+            "Creative Development",
+            "Web Design",
+            "UI/UX Design",
+            "Frontend Development",
+            "WebGL",
+            "Three.js",
+            "Interactive Design"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://aryansexe.netlify.app/#website",
+          "url": "https://aryansexe.netlify.app",
+          "name": "Aryan.EXE",
+          "description": "Creative Developer specializing in premium portfolio websites, immersive user experiences, modern UI/UX design, and interactive web development.",
+          "publisher": {
+            "@id": "https://aryansexe.netlify.app/#person"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="dark-theme">
+    <!-- Premium Canvas Morphing Preloader -->
+    <div id="preloader">
+        <svg id="loader-svg" viewBox="0 0 1000 300" preserveAspectRatio="xMidYMid meet">
+            <defs>
+                <!-- The Masking Text -->
+                <mask id="text-mask">
+                    <rect width="100%" height="100%" fill="black" />
+                    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" fill="white" 
+                          font-family="'Unbounded', sans-serif" font-weight="900" font-size="120">ARYAN.ExE</text>
+                </mask>
+            </defs>
+            
+            <!-- Group of bars that will be masked -->
+            <g mask="url(#text-mask)" id="bars-group">
+                <!-- Bars will be injected here by JS -->
+            </g>
+
+            <!-- Solid text to reveal after bars merge -->
+            <text id="final-text" x="50%" y="50%" text-anchor="middle" dominant-baseline="central" 
+                  fill="white" font-family="'Unbounded', sans-serif" font-weight="900" font-size="120"
+                  style="opacity: 0; filter: blur(10px);">ARYAN.ExE</text>
+        </svg>
+        <div class="loader-glow-sweep"></div>
+    </div>
+
+    <!-- Cinematic Stars Background -->
+    <div id="bg-stars">
+        <canvas id="stars-canvas"></canvas>
+    </div>
+    <div class="noise-overlay"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand" data-magnetic>
+            <div class="brand-logo-container">
+                <img src="assets/logo_symbol.png" alt="EXE Logo Symbol" class="brand-logo-symbol">
+                <img src="assets/logo_text.png" alt="EXE Wordmark" class="brand-logo-text">
+            </div>
+        </div>
+        
+        <!-- Desktop Links -->
+        <div class="nav-links">
+            <a href="#top" class="nav-link" data-hover data-magnetic>Home</a>
+            <a href="#work" class="nav-link" data-hover data-magnetic>Work</a>
+            <a href="#about" class="nav-link" data-hover data-magnetic>About</a>
+            <a href="contact.html" class="nav-link" data-hover data-magnetic>Contact</a>
+        </div>
+    </nav>
+
+
+
+    <!-- Main Content -->
+    <main data-lenis-container style="opacity: 0; will-change: transform, opacity, filter;">
+        
+        <!-- Cinematic Hero Section -->
+        <section class="hero-cinematic">
+
+            <div class="hero-wrapper">
+                <!-- Left Content -->
+                <div class="hero-left">
+                    <h1 class="giant-title">
+                        <span class="line-wrap"><div class="line">BEYOND</div></span>
+                        <span class="line-wrap"><div class="line"><span class="outline-text">LIMITS</span></div></span>
+                    </h1>
+
+                </div>
+
+                <!-- Right Content — Realistic Hanging Badge with Lanyard -->
+                <div class="hero-right" id="badge-zone">
+
+                    <!-- The full swinging assembly: lanyard + card -->
+                    <div class="badge-fg">
+
+                        <!-- Lanyard Assembly -->
+                        <div class="lanyard-assembly">
+
+                            <!-- SVG: straight strap + refined swivel hook -->
+                            <svg class="lanyard-svg" id="lanyard-svg" width="140" height="300" viewBox="0 0 140 300" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="strapGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%"   stop-color="#050505"/>
+                                        <stop offset="50%"  stop-color="#1a1a1a"/>
+                                        <stop offset="100%" stop-color="#050505"/>
+                                    </linearGradient>
+                                    <linearGradient id="blackMetal" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#080808"/>
+                                        <stop offset="30%" stop-color="#333333"/>
+                                        <stop offset="50%" stop-color="#111111"/>
+                                        <stop offset="80%" stop-color="#444444"/>
+                                        <stop offset="100%" stop-color="#080808"/>
+                                    </linearGradient>
+
+                                    <!-- Premium Silver Chrome Metal Gradient (Horizontal) -->
+                                    <linearGradient id="silverMetal" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#555"/>
+                                        <stop offset="15%" stop-color="#fff"/>
+                                        <stop offset="30%" stop-color="#888"/>
+                                        <stop offset="50%" stop-color="#eee"/>
+                                        <stop offset="70%" stop-color="#777"/>
+                                        <stop offset="85%" stop-color="#fff"/>
+                                        <stop offset="100%" stop-color="#666"/>
+                                    </linearGradient>
+
+                                    <!-- Premium Silver Chrome Metal Gradient (Vertical) -->
+                                    <linearGradient id="silverMetalVert" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#999"/>
+                                        <stop offset="20%" stop-color="#fff"/>
+                                        <stop offset="50%" stop-color="#777"/>
+                                        <stop offset="80%" stop-color="#eee"/>
+                                        <stop offset="100%" stop-color="#444"/>
+                                    </linearGradient>
+
+                                    <!-- Refined Premium Lobster Swivel Clasp — Back Parts (Behind Card) -->
+                                    <g id="clasp-back">
+                                        <!-- Main Hook Body (Fixed Arm) that goes behind the card -->
+                                        <path d="M 60 288 L 60 293 L 67 293 L 67 310 C 67 325, 53 325, 53 310 L 53 293" fill="none" stroke="url(#silverMetal)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+                                        
+                                        <!-- D-Ring back half -->
+                                        <path d="M 45 240 C 32 250, 40 275, 60 275 C 80 275, 88 250, 75 240" fill="none" stroke="url(#silverMetal)" stroke-width="4.5" stroke-linecap="round" opacity="0.4"/>
+                                    </g>
+
+                                    <!-- Refined Premium Lobster Swivel Clasp — Front Parts (In Front of Card) -->
+                                    <g id="clasp-front">
+                                        <!-- Top Buckle (Where strap folds) -->
+                                        <rect x="45" y="232" width="30" height="8" rx="2" fill="#111" stroke="#333" stroke-width="0.5"/>
+                                        <rect x="46" y="233" width="28" height="2" fill="rgba(255,255,255,0.1)" rx="1"/>
+                                        
+                                        <!-- D-Ring (Front/Main part) -->
+                                        <path d="M 45 240 C 32 250, 40 275, 60 275 C 80 275, 88 250, 75 240" fill="none" stroke="url(#silverMetal)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <!-- D-Ring Highlight -->
+                                        <path d="M 47 242 C 38 250, 45 270, 60 270" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round"/>
+                                        
+                                        <!-- Swivel Joint Assembly -->
+                                        <g transform="translate(60, 275)">
+                                            <!-- Swivel Base Disc -->
+                                            <circle cx="0" cy="0" r="7" fill="url(#silverMetal)"/>
+                                            <circle cx="0" cy="0" r="4.5" fill="#000" opacity="0.3"/>
+                                            
+                                            <!-- Swivel Barrel -->
+                                            <rect x="-4.5" y="3" width="9" height="13" rx="2" fill="url(#silverMetalVert)"/>
+                                            <rect x="-1" y="4" width="2.5" height="11" fill="rgba(255,255,255,0.5)" rx="1"/>
+                                            
+                                            <!-- Hook Spring Gate (The main body) -->
+                                            <path d="M -7.5 16 L 7.5 16 L 7.5 32 C 7.5 45, -7.5 45, -7.5 32 L -7.5 16 Z" fill="none" stroke="url(#silverMetal)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            
+                                            <!-- Inner Spring Gate (Moving part) -->
+                                            <path d="M -7.5 24 L -3 24 C -1 24, 0 23, 0 21 L 0 16" fill="none" stroke="url(#silverMetal)" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+                                            
+                                            <!-- Thumb Lever / Release -->
+                                            <g transform="translate(-8, 28)">
+                                                <circle cx="0" cy="0" r="3.5" fill="url(#silverMetalVert)" stroke="#444" stroke-width="0.5"/>
+                                                <rect x="-1.5" y="-1.5" width="3" height="3" fill="#fff" opacity="0.4" rx="1"/>
+                                                <!-- Lever Texture -->
+                                                <path d="M -1.5 -1 L 1.5 -1 M -1.5 0 L 1.5 0 M -1.5 1 L 1.5 1" stroke="#000" stroke-width="0.3" opacity="0.5"/>
+                                            </g>
+                                            
+                                            <!-- Pivot Pin -->
+                                            <circle cx="0" cy="8" r="2" fill="#111"/>
+                                            <circle cx="0" cy="8" r="0.8" fill="#555"/>
+                                        </g>
+                                    </g>
+                                </defs>
+
+                                <!-- Strap Drop Shadow -->
+                                <path id="rope-shadow" class="dynamic-strap" d="M 70 -50 L 70 250" fill="none" stroke="rgba(0,0,0,0.8)" stroke-width="24" stroke-linecap="butt" filter="blur(6px)"/>
+
+                                <!-- Strap Base Layer -->
+                                <path class="dynamic-strap" d="M 70 -50 L 70 250" fill="none" stroke="#0a0a0a" stroke-width="22" stroke-linecap="butt"/>
+
+                                <!-- Strap Texture (Smooth) -->
+                                <path class="dynamic-strap" d="M 70 -50 L 70 250" fill="none" stroke="#1a1a1a" stroke-width="18" stroke-linecap="butt"/>
+
+                                <!-- Path for Text -->
+                                <path id="rope-path" class="dynamic-strap" d="M 70 -50 L 70 250" fill="none" stroke="transparent" stroke-width="22" stroke-linecap="butt"/>
+
+                                <!-- Repeated text on path -->
+                                <text fill="#ffffff" font-family="'Inter', sans-serif" font-size="10px" font-weight="900" letter-spacing="1.5px">
+                                    <textPath href="#rope-path" startOffset="10%">
+                                        Aryan.exe • Aryan.exe • Aryan.exe • Aryan.exe
+                                    </textPath>
+                                </text>
+
+                            </svg>
+
+                                <!-- Clasp Wrapper: Now the primary container for the assembly -->
+                                <div class="clasp-wrapper" id="clasp-wrapper">
+                                    <!-- Back parts of the clasp (Behind Card) -->
+                                    <svg class="clasp-svg clasp-layer-back-2" width="140" height="300" viewBox="0 0 140 300"><g transform="translate(10, -12)"><use href="#clasp-back" /></g></svg>
+                                    <svg class="clasp-svg clasp-layer-back-1" width="140" height="300" viewBox="0 0 140 300"><g transform="translate(10, -12)"><use href="#clasp-back" /></g></svg>
+                                
+                                <!-- The card is now nested inside to move as a single rigid body -->
+                                <div class="lanyard-clip" id="lanyard-clip-dummy">
+                                    <!-- Dedicated high-performance GPU-composited shadow layer -->
+                                    <div class="card-shadow"></div>
+                                    <div class="id-card">
+                                        <div class="id-card-inner">
+                                            <!-- Realistic 3D Depth Slices (Plastic Core) -->
+                                            <div class="card-depth card-depth-1"></div>
+                                            <div class="card-depth card-depth-2"></div>
+                                            <div class="card-depth card-depth-3"></div>
+                                            <div class="card-depth card-depth-4"></div>
+                                            <div class="card-depth card-depth-5"></div>
+                                            <div class="card-depth card-depth-6"></div>
+                                            <div class="card-depth card-depth-7"></div>
+                                            <div class="card-depth card-depth-8"></div>
+
+                                            <!-- FRONT FACE -->
+                                            <div class="card-face card-front">
+                                                <div class="card-punch-hole">
+                                                    <div class="punch-hole-ring"></div>
+                                                    <div class="punch-hole-depth"></div>
+                                                </div>
+                                                
+                                                <!-- Top Left Vector Logo -->
+                                                <div class="card-logo-wrap">
+                                                    <svg class="id-card-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M 50 12 L 88 88 L 68 88 L 50 50 L 32 88 L 12 88 Z" fill="#000" />
+                                                        <path d="M 36 68 L 64 68 L 64 74 L 36 74 Z" fill="#000" />
+                                                    </svg>
+                                                </div>
+
+                                                <!-- Front Content -->
+                                                <div class="id-card-body-front">
+                                                    <h2 class="id-badge-name">
+                                                        <span class="name-text">Aryan</span><span class="exe-text">.exe</span>
+                                                    </h2>
+                                                    <div class="badge-line-divider"></div>
+                                                    
+                                                    <div class="badge-info-stack">
+                                                        <div class="info-row">
+                                                            <div class="info-icon"><i class="fa-regular fa-user"></i></div>
+                                                            <div class="info-meta">
+                                                                <span class="info-title">NAME</span>
+                                                                <span class="info-value">Aryan .exe</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-row">
+                                                            <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
+                                                            <div class="info-meta">
+                                                                <span class="info-title">EMAIL</span>
+                                                                <span class="info-value info-value-email">aryansportfolio00@gmail.com</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="info-row">
+                                                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                                            <div class="info-meta">
+                                                                <span class="info-title">LOCATION</span>
+                                                                <span class="info-value">India</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Vector Wave Dots -->
+                                                <div class="badge-dot-wave">
+                                                    <svg viewBox="0 0 183.6 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M -10 50 C 30 40, 60 60, 100 48 C 140 36, 170 54, 200 45" stroke="#000" stroke-width="1.2" stroke-dasharray="0 4.5" stroke-linecap="round" opacity="0.07" />
+                                                        <path d="M -10 43 C 30 33, 60 53, 100 41 C 140 29, 170 47, 200 38" stroke="#000" stroke-width="1.2" stroke-dasharray="0 4.5" stroke-linecap="round" opacity="0.06" />
+                                                        <path d="M -10 36 C 30 26, 60 46, 100 34 C 140 22, 170 40, 200 31" stroke="#000" stroke-width="1.2" stroke-dasharray="0 4.5" stroke-linecap="round" opacity="0.05" />
+                                                        <path d="M -10 29 C 30 19, 60 39, 100 27 C 140 15, 170 33, 200 24" stroke="#000" stroke-width="1.2" stroke-dasharray="0 4.5" stroke-linecap="round" opacity="0.04" />
+                                                        <path d="M -10 22 C 30 12, 60 32, 100 20 C 140 8, 170 26, 200 17" stroke="#000" stroke-width="1.2" stroke-dasharray="0 4.5" stroke-linecap="round" opacity="0.03" />
+                                                        <path d="M -10 15 C 30 5, 60 25, 100 13 C 140 1, 170 19, 200 10" stroke="#000" stroke-width="1.2" stroke-dasharray="0 4.5" stroke-linecap="round" opacity="0.02" />
+                                                    </svg>
+                                                </div>
+
+                                                <div class="card-sheen"></div>
+                                                <div class="card-shading"></div>
+                                            </div>
+ 
+                                            <!-- BACK FACE -->
+                                            <div class="card-face card-back">
+                                                <div class="card-punch-hole">
+                                                    <div class="punch-hole-ring"></div>
+                                                    <div class="punch-hole-depth"></div>
+                                                </div>
+                                                
+                                                <!-- Back Header with Logo and mini Mesh -->
+                                                <div class="card-header-back">
+                                                    <svg class="id-card-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M 50 12 L 88 88 L 68 88 L 50 50 L 32 88 L 12 88 Z" fill="#000" />
+                                                        <path d="M 36 68 L 64 68 L 64 74 L 36 74 Z" fill="#000" />
+                                                    </svg>
+                                                    
+                                                    <svg class="back-mini-mesh" viewBox="0 0 60 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M 5 6 C 15 -2, 25 10, 35 3 C 45 -4, 55 8, 65 1" stroke="#000" stroke-width="1.2" stroke-dasharray="0 3.5" stroke-linecap="round" opacity="0.07" />
+                                                        <path d="M 5 12 C 15 4, 25 16, 35 9 C 45 2, 55 14, 65 7" stroke="#000" stroke-width="1.2" stroke-dasharray="0 3.5" stroke-linecap="round" opacity="0.05" />
+                                                        <path d="M 5 18 C 15 10, 25 22, 35 15 C 45 8, 55 20, 65 13" stroke="#000" stroke-width="1.2" stroke-dasharray="0 3.5" stroke-linecap="round" opacity="0.03" />
+                                                    </svg>
+                                                </div>
+
+                                                <!-- Creative Developer Center Title -->
+                                                <div class="card-body-back-center">
+                                                    <h3 class="title-creative">CREATIVE</h3>
+                                                    <h3 class="title-developer">DEVELOPER</h3>
+                                                    <div class="divider-with-dot">
+                                                        <span class="divider-line"></span>
+                                                        <span class="divider-dot"></span>
+                                                        <span class="divider-line"></span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Vector QR Code with brackets -->
+                                                <div class="card-back-qr-container">
+                                                    <div class="qr-brackets-box">
+                                                        <div class="qr-bracket t-l"></div>
+                                                        <div class="qr-bracket t-r"></div>
+                                                        <div class="qr-bracket b-l"></div>
+                                                        <div class="qr-bracket b-r"></div>
+                                                        <img src="assets/qr_code.png" class="id-vector-qr" alt="Scan to Connect QR Code" />
+                                                    </div>
+                                                    <div class="qr-badge-pill">SCAN TO CONNECT</div>
+                                                </div>
+
+                                                <!-- Bottom Columns -->
+                                                <div class="card-back-footer">
+                                                    <div class="footer-block">
+                                                        <div class="f-icon"><i class="fa-solid fa-globe"></i></div>
+                                                        <span class="f-lbl">WEBSITE</span>
+                                                        <span class="f-val">aryan.exe</span>
+                                                    </div>
+                                                    <div class="footer-block">
+                                                        <div class="f-icon"><i class="fa-regular fa-envelope"></i></div>
+                                                        <span class="f-lbl">EMAIL</span>
+                                                        <span class="f-val">aryansportfolio00@gmail.com</span>
+                                                    </div>
+                                                    <div class="footer-block">
+                                                        <div class="f-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                                        <span class="f-lbl">LOCATION</span>
+                                                        <span class="f-val">India</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-sheen"></div>
+                                                <div class="card-shading"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Multi-layer Clasp Front for 3D Volume -->
+                                <svg class="clasp-svg clasp-layer-mid-1" width="140" height="300" viewBox="0 0 140 300"><g transform="translate(10, -12)"><use href="#clasp-front" /></g></svg>
+                                <svg class="clasp-svg clasp-layer-mid-2" width="140" height="300" viewBox="0 0 140 300"><g transform="translate(10, -12)"><use href="#clasp-front" /></g></svg>
+                                <svg class="clasp-svg clasp-layer-mid-3" width="140" height="300" viewBox="0 0 140 300"><g transform="translate(10, -12)"><use href="#clasp-front" /></g></svg>
+                                
+                                <svg class="clasp-svg clasp-layer-front-1" width="140" height="300" viewBox="0 0 140 300"><g transform="translate(10, -12)" filter="drop-shadow(0px 4px 6px rgba(0,0,0,0.5))"><use href="#clasp-front" /></g></svg>
+                                <svg class="clasp-svg clasp-layer-front-2" width="140" height="300" viewBox="0 0 140 300"><g transform="translate(10, -12)" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.3))"><use href="#clasp-front" /></g></svg>
+                                <svg class="clasp-svg clasp-layer-front-3" width="140" height="300" viewBox="0 0 140 300"><g transform="translate(10, -12)"><use href="#clasp-front" /></g></svg>
+                            </div>
+                        </div> <!-- End lanyard-assembly -->
+                    </div> <!-- End badge-fg -->
+
+                </div>
+            </div>
+            
+
+        </section>
+
+        <!-- Work Section (With Parallax) -->
+        <section id="work" class="work-section">
+            <h2 class="section-title">
+                <span class="line-wrap"><div class="line">Selected Work</div></span>
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1 (Umbaui Slideshow) -->
+                <a href="https://umbauitreanding.wixsite.com/umbaui" target="_blank" rel="noopener noreferrer" class="project-card" data-hover data-cursor="view" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="project-image-wrap umbaui-slideshow">
+                        <div class="slide slide-hero slide-active">
+                            <img src="assets/umbaui_hero.png" alt="Umbaui Hero Section">
+                        </div>
+                        <div class="slide slide-explore">
+                            <img src="assets/umbaui_living.png" alt="Umbaui Living Spaces">
+                        </div>
+                        <div class="slide slide-reviews">
+                            <img src="assets/umbaui_reviews.png" alt="Umbaui Reviews Section">
+                        </div>
+                        <div class="slide slide-contact">
+                            <img src="assets/umbaui_contact.png" alt="Umbaui Contact Section">
+                        </div>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Umbaui Essence</h3>
+                        <p>Premium Textile Showcase</p>
+                    </div>
+                </a>
+                <!-- Project 2 -->
+                <a href="https://wooodlanders.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-card" data-hover data-cursor="view" style="text-decoration: none; color: inherit; display: block;">
+                    <div class="project-image-wrap furni-slideshow">
+                        <div class="slide slide-active">
+                            <img src="assets/furni_slide_1.png" alt="Furni Modern Interior Design Studio (Slide 1)">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/furni_slide_2.jpg" alt="Nordic and Kruzo Aero Chairs (Slide 2)">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/furni_slide_3.png" alt="We Help You Make Modern Interior Design Collage (Slide 3)">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/furni_slide_4.png" alt="Why Choose Us Features (Slide 4)">
+                        </div>
+                        <div class="project-overlay"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Veloura Interiors</h3>
+                        <p>Luxury Furniture Experience</p>
+                    </div>
+                </a>
+            </div>
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="work.html" class="magnetic-btn" data-magnetic data-hover>
+                    <span class="btn-text">View All Projects</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section class="expertise-section">
+            <h2 class="section-title">
+                <span class="line-wrap"><div class="line">Expertise</div></span>
+            </h2>
+            <div class="capabilities-grid">
+                <div class="cap-card" data-hover>
+                    <span class="cap-icon">⚡</span>
+                    <h3>Creative Development</h3>
+                    <p>Focused on building visually engaging websites with smooth interactions, modern layouts, and immersive user experiences.</p>
+                </div>
+                <div class="cap-card" data-hover>
+                    <span class="cap-icon">🎨</span>
+                    <h3>UI/UX Design</h3>
+                    <p>Focused on minimal aesthetics, intuitive layouts, and visually balanced user experiences.</p>
+                </div>
+                <div class="cap-card" data-hover>
+                    <span class="cap-icon">⚛️</span>
+                    <h3>Creative Technology</h3>
+                    <p>Combining modern design concepts with interactive elements to create smooth and immersive digital experiences.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process-section">
+            <h2 class="section-title">
+                <span class="line-wrap"><div class="line">The Approach</div></span>
+            </h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-num">01</div>
+                    <h3>Discovery</h3>
+                    <p>Understanding the vision, audience, and digital identity to create a strong strategic foundation for the entire experience.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">02</div>
+                    <h3>Design</h3>
+                    <p>Crafting modern, visually refined interfaces focused on clarity, interaction, and immersive user experience.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">03</div>
+                    <h3>Development</h3>
+                    <p>Building smooth, high-performance websites with clean architecture, responsive layouts, and seamless animations.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">04</div>
+                    <h3>Launch</h3>
+                    <p>Optimizing, testing, and delivering a polished final product designed for performance, scalability, and impact.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section class="tech-section">
+            <div class="tech-marquee">
+                <div class="marquee-content">
+                    <span class="tech-item">BEYOND CODE • BEYOND LIMITS • BY ARYAN.EXE</span>
+                    <span class="tech-item">BEYOND CODE • BEYOND LIMITS • BY ARYAN.EXE</span>
+                    <!-- Repeat for smooth loop -->
+                    <span class="tech-item">BEYOND CODE • BEYOND LIMITS • BY ARYAN.EXE</span>
+                    <span class="tech-item">BEYOND CODE • BEYOND LIMITS • BY ARYAN.EXE</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title">
+                <span class="line-wrap"><div class="line">About Me</div></span>
+            </h2>
+            <div class="about-grid">
+                <!-- Left Image Column -->
+                <div class="about-image-col">
+                    <div class="about-img-wrapper" data-hover data-magnetic>
+                        <img src="assets/developer_portrait.jpg" alt="Developer Portrait" class="about-portrait parallax-img">
+                        <div class="about-img-overlay"></div>
+                    </div>
+                </div>
+                
+                <!-- Right Text Column -->
+                <div class="about-text-col">
+                    <h3 class="about-headline about-anim">Blending Creativity & Digital Design</h3>
+                    <p class="about-bio about-anim">
+                        I create modern digital experiences focused on clean aesthetics, smooth interaction, and immersive visual presentation. Passionate about minimal UI, interactive layouts, and premium web design, I enjoy building websites that feel visually refined and engaging.
+                    </p>
+                    <p class="about-bio about-anim">
+                        Currently pursuing an MBA at DAVV University while continuously exploring modern web design, creative frontend concepts, and digital experiences.
+                    </p>
+                    
+                    <!-- Performance Stats -->
+                    <div class="about-stats">
+                        <div class="stat-item about-anim">
+                            <div class="stat-value">
+                                <h4 class="stat-number" data-target="15">0</h4><span class="stat-plus">+</span>
+                            </div>
+                            <span class="stat-label">Design Concepts</span>
+                        </div>
+                        <div class="stat-item about-anim">
+                            <div class="stat-value">
+                                <h4 class="stat-number" data-target="50">0</h4><span class="stat-plus">+</span>
+                            </div>
+                            <span class="stat-label">UI Concepts Explored</span>
+                        </div>
+                        <div class="stat-item about-anim">
+                            <div class="stat-value">
+                                <h4 class="stat-number" data-target="8">0</h4><span class="stat-plus">+</span>
+                            </div>
+                            <span class="stat-label">Projects Designed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-content" style="text-align: center;">
+                <h2 class="section-title">SAY : ) Hi</h2>
+                <a href="contact.html" class="magnetic-btn" data-magnetic>
+                    <span class="btn-text">Start A Project</span>
+                </a>
+
+                <div class="social-links contact-anim" style="margin-top: 2.1rem; align-items: center;">
+                    <a href="https://x.com/Aryanwastakenn" target="_blank" rel="noopener noreferrer" class="social-link" data-magnetic data-hover><i class="fa-brands fa-x-twitter"></i> X / Twitter</a>
+                    <a href="https://www.linkedin.com/in/aryangehlot/" target="_blank" rel="noopener noreferrer" class="social-link" data-magnetic data-hover><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/aryangehlod1234-blip" target="_blank" rel="noopener noreferrer" class="social-link" data-magnetic data-hover><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="https://www.instagram.com/aryanswastaken?igsh=MTRtMno5anNqdzNyMw==" target="_blank" rel="noopener noreferrer" class="social-link" data-magnetic data-hover><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+
+
+            <!-- Closing Section -->
+        <section class="closing-section">
+            <h2 class="closing-title" data-hover>THANK YOU FOR VISITING!</h2>
+        </section>
+
+        <footer class="footer">
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/aryanswastaken?igsh=MTRtMno5anNqdzNyMw==" target="_blank" rel="noopener noreferrer" class="footer-social-icon" data-hover data-magnetic aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/Aryanwastakenn" target="_blank" rel="noopener noreferrer" class="footer-social-icon" data-hover data-magnetic aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/aryangehlot/" target="_blank" rel="noopener noreferrer" class="footer-social-icon" data-hover data-magnetic aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/aryangehlod1234-blip" target="_blank" rel="noopener noreferrer" class="footer-social-icon" data-hover data-magnetic aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <p>&copy; 2026 ARYAN PORTFOLIO. All rights reserved.</p>
+            </footer>
+        </section>
+    </main>
+
+    <!-- Three.js for Defender car (works on local file://) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="assets/GLTFLoader.js"></script>
+    <script src="assets/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

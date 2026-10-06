@@ -1,0 +1,8 @@
+# www.robotstxt.org/
+
+# Allow all search engines to crawl the website
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://aryansexe.netlify.app/sitemap.xml
